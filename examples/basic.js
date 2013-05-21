@@ -1,17 +1,4 @@
-# bnch
-
-Node.js benchmark in the console
-
-### Installation
-
-    npm install bnch
-
-### Usage:
-
-Create a new file called mybenchmark.js
-
-```javascript
-var bnch = require('bnch');
+var bnch = require('../');
 
 var array = new Array(65536);
 array[65500] = 'mom';
@@ -35,16 +22,3 @@ suite.add("manual search", function(array) {
         }
     }
 });
-```
-
-And run your file using
-
-    node mybenchmark.js
-
-And the output will look like this:
-
-![benchmark results](http://f.cl.ly/items/2W1o1J000I0k0R1I1a0K/Screen%20Shot%202013-05-21%20at%2012.16.07%20AM.png)
-
-### License
-
-MIT
