@@ -2,6 +2,8 @@
 
 Node.js benchmark in the console
 
+*Note:* this project is pretty young and the results are pretty varied atm. See TODO.
+
 ### Installation
 
     npm install bnch
@@ -44,6 +46,12 @@ And run your file using
 And the output will look like this:
 
 ![benchmark results](http://f.cl.ly/items/2W1o1J000I0k0R1I1a0K/Screen%20Shot%202013-05-21%20at%2012.16.07%20AM.png)
+
+### Todo
+
+- Isolate tests better so the results are not as varied
+- Possibly support async tests
+- Adjust sample size depending on the time each thing takes to run
 
 ### License
 
