@@ -54,7 +54,7 @@ Bnch.prototype._printResults = function() {
         var str = c.name + ": " + opsPerSecond.toFixed(2) + " ops per second. -- ";
         if (c === fastestCase) {
             str = colorFastest + str;
-            str += "Fasest" + colorReset;
+            str += "Fastest" + colorReset;
         } else {
             var timesSlower = 1 - (fastestCase.time / c.time);
             str += (timesSlower * 100).toFixed(2) + "% slower";
